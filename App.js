@@ -4,13 +4,6 @@ var Contacts = require('react-native-contacts')
 
 export default class App extends Component {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      contacts: []
-    }
-  }
-
   fetchContacts = async () => {
     try {
       const granted = await PermissionsAndroid.request(
